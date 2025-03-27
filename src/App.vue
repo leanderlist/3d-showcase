@@ -7,26 +7,19 @@
       <div class="w-full">
         <h1 class="text-6xl">3D-Showcase</h1>
         <p class="text-2xl">von Leander List</p>
-        <div class="flex justify-between items-center w-full mt-10 border-b">
-          <div class="p-10">
-            <h2 class="text-4xl">Booleans</h2>
-            <p class="text-xl">
-              Die Aufgabe Booleans war die letzte Aufgabe des 5. Jahrgangs.
-              Die Aufgabenstellung bestand darin, eine Lootbox aus einem Videospiel in Maya zu modellieren.
-              Die Lootbox sollte mithilfe von Booleans erstellt werden.
-                
-              Ich habe mich für einen Inkubator aus dem Spiel <b>Pokemon Go</b> entschieden.
-              Dabei handelt es sich um eine Art Brutmaschine, die verwendet wird, um Eier auszubrüten.
-              Das Modell wurde mit verschiedenen Texturen und Materialien versehen, um das passende Aussehen zu erzielen.
-            </p>
-          </div>
-          <div>
-            <ModelViewer model="incubator" />
-          </div>
-          
-        </div>
+        <ModelEntry title="Booleans" model="incubator" model_name="Pokemon GO: Inkubator">
+          Die Aufgabe Booleans war die letzte Aufgabe des 5. Jahrgangs.
+          Die Aufgabenstellung bestand darin, eine Lootbox aus einem Videospiel in Maya zu modellieren.
+          Die Lootbox sollte mithilfe von Booleans erstellt werden.
 
-        <ModelViewer model="minion" />
+          Ich habe mich für einen Inkubator aus dem Spiel <b>Pokemon Go</b> entschieden.
+          Dabei handelt es sich um eine Art Brutmaschine, die verwendet wird, um Eier auszubrüten.
+          Das Modell wurde mit verschiedenen Texturen und Materialien versehen, um das passende Aussehen zu
+          erzielen.
+        </ModelEntry>
+        <ModelEntry title="Minion xGen" model="minion" :model_scaling="1.2" model_name="Minion">
+          alarm
+        </ModelEntry>
       </div>
 
     </div>
@@ -34,5 +27,5 @@
 </template>
 
 <script lang="ts" setup>
-import ModelViewer from './components/ModelViewer.vue';
+import ModelEntry from './components/ModelEntry.vue';
 </script>

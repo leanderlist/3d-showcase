@@ -1,9 +1,8 @@
 <template>
     <div class="relative w-110 h-110">
         <div class="absolute top-0 left-0 w-full h-full" ref="target"></div>
-        <ModelBackground/>
+        <ModelBackground />
     </div>
-    
 </template>
 
 <script lang="ts" setup>
@@ -13,9 +12,16 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import ModelBackground from '@/components/ModelBackground.vue';
 
-const props = defineProps<{
-    model: string;
-}>();
+const props = defineProps({
+    model: {
+        type: String,
+        required: true
+    },
+    scaling: {
+        type: Number,
+        required: false
+    }
+});
 
 import * as THREE from 'three';
 
@@ -50,15 +56,21 @@ onMounted(() => {
         const model = gltf.scene;
         var boundingbox = new THREE.Box3().setFromObject(model);
         var size = new THREE.Vector3();
+        var center = new THREE.Vector3();
 
         boundingbox.getSize(size);
+        boundingbox.getCenter(center);
+
         const maxDim = Math.max(size.x, size.y, size.z);
 
-        const targetSize = 1.0;
+        const targetSize = props.scaling || 1;
         const scaleFactor = targetSize / maxDim;
         model.scale.setScalar(scaleFactor);
 
-        //model.position.set(0, 0, 0)
+        model.position.x = -center.x * scaleFactor;
+        model.position.y = -center.y * scaleFactor;
+        model.position.z = -center.z * scaleFactor;
+
         scene.add(model);
     }, undefined, (error) => {
         console.error('Error loading model:', error);
