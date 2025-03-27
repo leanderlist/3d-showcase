@@ -7,7 +7,7 @@
       <div class="w-full">
         <h1 class="text-6xl">3D-Showcase</h1>
         <p class="text-2xl">von Leander List</p>
-        <ModelEntry title="Booleans" model="incubator" model_name="Pokemon GO: Inkubator">
+        <ModelEntry title="Booleans" model="incubator" model_name="Pokemon GO: Inkubator" direction="right">
           Die Aufgabe Booleans war die letzte Aufgabe des 5. Jahrgangs.
           Die Aufgabenstellung bestand darin, eine Lootbox aus einem Videospiel in Maya zu modellieren.
           Die Lootbox sollte mithilfe von Booleans erstellt werden.
@@ -17,11 +17,10 @@
           Das Modell wurde mit verschiedenen Texturen und Materialien versehen, um das passende Aussehen zu
           erzielen.
         </ModelEntry>
-        <ModelEntry title="Minion xGen" model="minion" :model_scaling="1.2" model_name="Minion">
+        <ModelEntry title="xGen" model="minion" :model_scaling="1.2" model_name="Minion" direction="left">
           alarm
         </ModelEntry>
       </div>
-
     </div>
   </main>
 </template>
