@@ -7,19 +7,20 @@
       <div class="w-full">
         <h1 class="text-6xl">3D-Showcase</h1>
         <p class="text-2xl">von Leander List</p>
-        <ModelEntry title="Booleans" model="incubator" subheading="Pokemon GO: Inkubator" direction="right">
-          Die Aufgabe Booleans war die letzte Aufgabe des 5. Jahrgangs.
-          Die Aufgabenstellung bestand darin, eine Lootbox aus einem Videospiel in Maya zu modellieren.
-          Die Lootbox sollte mithilfe von Booleans erstellt werden.
-
-          Ich habe mich für einen Inkubator aus dem Spiel <b>Pokemon Go</b> entschieden.
-          Dabei handelt es sich um eine Art Brutmaschine, die verwendet wird, um Eier auszubrüten.
-          Das Modell wurde mit verschiedenen Texturen und Materialien versehen, um das passende Aussehen zu
-          erzielen.
-        </ModelEntry>
-        <ModelEntry title="xGen" model="minion" :model_scaling="1.2" subheading="Minion" direction="left">
-          alarm
-        </ModelEntry>
+        <div v-for="section in sections" :key="section.title">
+          <h2 class="text-4xl mt-10">{{ section.title }}</h2>
+          <div v-for="entry, index in section.entries" :key="entry.title">
+            <ModelEntry :title="entry.title" :model_scaling="entry.model_scaling" :model="entry.path[1]" :subheading="entry.subheading" :direction="index % 2 === 0 ? 'right' : 'left'" v-if="entry.type === 'model'">
+              {{ entry.description }}
+            </ModelEntry>
+            <ImageEntry :title="entry.title" :image="entry.path[1]" :subheading="entry.subheading" :direction="index % 2 === 0 ? 'right' : 'left'" v-if="entry.type === 'image'">
+              {{ entry.description }}
+            </ImageEntry>
+            <VideoEntry :title="entry.title" :video="entry.path[1]" :subheading="entry.subheading" :direction="index % 2 === 0 ? 'right' : 'left'" v-if="entry.type === 'video'">
+              {{ entry.description }}
+            </VideoEntry>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -27,4 +28,15 @@
 
 <script lang="ts" setup>
 import ModelEntry from './components/ModelEntry.vue';
+import ImageEntry from './components/ImageEntry.vue';
+import VideoEntry from './components/VideoEntry.vue';
+
+import entryData from "@/assets/projects.json";
+import type { Entry, Section } from "@/types/entries";
+
+const sections: Section[] = entryData;
+
+
+
+
 </script>
