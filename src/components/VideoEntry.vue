@@ -1,8 +1,8 @@
 <template>
-    <div class="flex justify-between items-center w-full mt-10 border-b">
+    <div class="flex justify-between items-center w-full py-10 border-b">
         <div v-if="props.direction === 'left'">
-            <video width="320" height="240" controls>
-                <source :src="`${props.video}.mp4`" type="video/mp4">
+            <video width="320" height="240" class="h-100 w-full object-cover" controls>
+                <source :src="`videos/${props.video}.mp4`" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
@@ -14,8 +14,8 @@
             </p>
         </div>
         <div v-if="props.direction !== 'left'">
-            <video width="320" height="240" controls>
-                <source :src="`${props.video}.mp4`" type="video/mp4">
+            <video width="320" height="240" class="h-100 w-full object-cover" controls>
+                <source :src="`videos/${props.video}.mp4`" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>

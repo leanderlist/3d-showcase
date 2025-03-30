@@ -52,7 +52,7 @@ onMounted(() => {
     camera.position.z = 2;
 
     const loader = new GLTFLoader();
-    loader.load(`/models/${props.model}.glb`, (gltf) => {
+    loader.load(`models/${props.model}.glb`, (gltf) => {
         const model = gltf.scene;
         var boundingbox = new THREE.Box3().setFromObject(model);
         var size = new THREE.Vector3();

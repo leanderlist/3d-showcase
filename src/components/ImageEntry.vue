@@ -1,7 +1,7 @@
 <template>
-    <div class="flex justify-between items-center w-full pt-10 border-b">
+    <div class="flex justify-between items-center w-full py-10 border-b">
         <div v-if="props.direction === 'left'">
-            <ModelViewer :model="`${props.model}`" :scaling="model_scaling"/>
+            <img :src="`images/${props.image}.png`" :alt="`${props.subheading} image`" class="h-100 w-full object-cover" />
         </div>
         <div class="px-10 w-full">
             <h2 class="text-4xl">{{ props.title }}</h2>
@@ -11,14 +11,12 @@
             </p>
         </div>
         <div v-if="props.direction !== 'left'">
-            <ModelViewer :model="props.model" :scaling="model_scaling"/>
+            <img :src="`images/${props.image}.png`" :alt="`${props.subheading} image`" class="h-100 w-full object-cover" />
         </div>
     </div>
 </template>
 
 <script lang="ts" setup>
-
-import ModelViewer from './ModelViewer.vue';
 
 const props = defineProps({
     title: {
@@ -29,13 +27,9 @@ const props = defineProps({
         type: String,
         required: true
     },
-    model: {
+    image: {
         type: String,
         required: true
-    },
-    model_scaling: {
-        type: Number,
-        required: false
     },
     subheading: {
         type: String,
