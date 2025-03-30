@@ -1,123 +1,129 @@
 [
     {
         "title": "3. Jahrgang",
-        "content": [
+        "entries": [
             {
                 "title": "Tinkercad 3. Labor",
-                "model_name": "Schachfigur",
+                "subheading": "Schachfigur",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "model",
+                "model_scaling": 5,
                 "path": ["tinkercad"]
             },
             {
                 "title": "Shadering & Lights 3. Labor",
-                "model_name": "Schachbrett",
+                "subheading": "Schachbrett",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                "type": "model",
+                "type": "image",
+                "model_scaling": 1,
                 "path": ["shadering"]
             },
             {
                 "title": "Robotershader 3. Labor",
-                "model_name": "Roboter",
+                "subheading": "Roboter",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "model",
+                "model_scaling": 1,
                 "path": ["roboter"]
             }
         ]
     },
     {
         "title": "4. Jahrgang",
-        "content": [
+        "entries": [
             {
                 "title": "Animating Rigs 4. Labor",
-                "model_name": "Animierte Sportübung",
+                "subheading": "Animierte Sportübung",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "video",
+                "model_scaling": 1,
                 "path": ["rigs"]
             },
             {
                 "title": "Blendshapes 4. Labor",
-                "model_name": "Mimik mit Blendshapes",
+                "subheading": "Mimik mit Blendshapes",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "video",
+                "model_scaling": 1,
                 "path": ["blendshapes"]
             },
             {
                 "title": "NURBS 4. Labor",
-                "model_name": "Lichtschwert",
+                "subheading": "Lichtschwert",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-                "type": "model",
+                "type": "image",
+                "model_scaling": 1,
                 "path": ["nurbs"]
             },
             {
                 "title": "Dynamics 4. Labor",
-                "model_name": "TODO",
+                "subheading": "TODO",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "video",
+                "model_scaling": 1,
                 "path": ["dynamics"]
             }
         ]
     },
     {
         "title": "5. Jahrgang",
-        "content": [
+        "entries": [
             {
                 "title": "nCloth 5. Theorie",
-                "model_name": "Tisch mit Tischtuch",
+                "subheading": "Tisch mit Tischtuch",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "model",
+                "model_scaling": 1,
                 "path": ["ncloth"]
             },
             {
                 "title": "nParticles 5. Theorie",
-                "model_name": "Partikel",
+                "subheading": "Partikel",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "image",
+                "model_scaling": 1,
                 "path": ["nparticles"]
             },
             {
                 "title": "Entwicklungsstufen 5. Theorie",
-                "model_name": "anhand einer Gummiente",
+                "subheading": "anhand einer Gummiente",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "model_multi",
-                "path": ["ncloth"]
+                "model_scaling": 1,
+                "path": ["entwicklungsstufen/wireframe", "entwicklungsstufen/texture", "entwicklungsstufen/shading"]
             },
             {
                 "title": "Booleans 5. Theorie 1",
-                "model_name": "Pokemon GO Inkubator",
+                "subheading": "Pokemon GO Inkubator",
                 "description": "Die Aufgabe Booleans war die letzte Aufgabe des 5. Jahrgangs. Die Aufgabenstellung bestand darin, eine Lootbox aus einem Videospiel in Maya zu modellieren. Die Lootbox sollte mithilfe von Booleans erstellt werden.\nIch habe mich für einen Inkubator aus dem Spiel <b>Pokemon Go</b> entschieden. Dabei handelt es sich um eine Art Brutmaschine, die verwendet wird, um Eier auszubrüten. Das Modell wurde mit verschiedenen Texturen und Materialien versehen, um das passende Aussehen zu erzielen.",
                 "type": "model",
+                "model_scaling": 1,
                 "path": ["incubator"]
             },
             {
                 "title": "CGI 5. Labor 1",
-                "model_name": "UFO flieht um eine Brücke",
+                "subheading": "UFO flieht um eine Brücke",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "video",
+                "model_scaling": 1,
                 "path": ["cgi"]
             },
             {
                 "title": "xGen 5. Labor 2",
-                "model_name": "Minion",
+                "subheading": "Minion",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "model",
+                "model_scaling": 1,
                 "path": ["minion"]
             },
             {
                 "title": "Liquids 5. Labor 3",
-                "model_name": "Flüssigkeiten mithilfe von Bifrost",
+                "subheading": "Flüssigkeiten mithilfe von Bifrost",
                 "description": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
                 "type": "video",
+                "model_scaling": 1,
                 "path": ["liquids"]
             }
         ]
     }
-   
-    
-    
-    
-    
-    
-
-
 ]
