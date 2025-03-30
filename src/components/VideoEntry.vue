@@ -7,7 +7,7 @@
             </video>
         </div>
         <div class="px-10 w-full">
-            <h2 class="text-4xl">{{ props.title }}</h2>
+            <h2 class="text-3xl">{{ props.title }} {{ props.video }}</h2>
             <p class="text-xl text-gray-400 mb-3">{{ props.subheading }}</p>
             <p class="text-xl">
                 <slot></slot>
