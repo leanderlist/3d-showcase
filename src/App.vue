@@ -28,6 +28,9 @@
       </div>
     </div>
   </main>
+  <footer>
+    <Footer />
+  </footer>
 </template>
 
 <script lang="ts" setup>
@@ -35,6 +38,7 @@ import ModelEntry from './components/ModelEntry.vue';
 import ImageEntry from './components/ImageEntry.vue';
 import VideoEntry from './components/VideoEntry.vue';
 import Header from './components/Header.vue';
+import Footer from './components/Footer.vue';
 
 import entryData from "@/assets/projects.json";
 import type { Section } from "@/types/entries";
