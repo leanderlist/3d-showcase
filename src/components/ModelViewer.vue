@@ -51,9 +51,15 @@ onMounted(() => {
 
     camera.position.z = 2;
 
+    const mixer = new THREE.AnimationMixer(scene);
     const loader = new GLTFLoader();
     loader.load(`models/${props.model}.glb`, (gltf) => {
         const model = gltf.scene;
+        const animation = gltf.animations[0];
+        if(animation) {
+            let action = mixer.clipAction(animation, model);
+            action.play();
+        }
         var boundingbox = new THREE.Box3().setFromObject(model);
         var size = new THREE.Vector3();
         var center = new THREE.Vector3();
@@ -90,11 +96,18 @@ onMounted(() => {
 
     controls.enableRotate = true;
 
+    const clock = new THREE.Clock();
+
     const animate = () => {
         requestAnimationFrame(animate);
+        let deltaTime = clock.getDelta();
+        mixer.update(deltaTime);
+        controls.update()
         renderer.render(scene, camera);
     };
 
     animate();
 });
+
+
 </script>
