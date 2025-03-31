@@ -4,9 +4,9 @@
             style="filter: brightness(1.3);">
             <div class="flex items-center">
                 <ul class="menu menu-horizontal bg-base-200 !p-0 menu-sm rounded-box h-fit">
-                    <li><a class="px-10" @click="">3. Jahrgang</a></li>
-                    <li><a class="px-10" @click="">4. Jahrgang</a></li>
-                    <li><a class="px-10" @click="">5. Jahrgang</a></li>
+                    <li><a class="px-10" href="#3">3. Jahrgang</a></li>
+                    <li><a class="px-10" href="#4">4. Jahrgang</a></li>
+                    <li><a class="px-10" href="#5">5. Jahrgang</a></li>
                 </ul>
             </div>
             <div>

@@ -8,7 +8,7 @@
         <h1 class="text-6xl">3D-Showcase</h1>
         <p class="text-2xl">von Leander List</p>
         <div v-for="section, index in sections" :key="section.title">
-          <h2 class="text-4xl mt-10" :ref="numberToString">{{ section.title }}</h2>
+          <h2 class="text-4xl mt-10" :ref="numberToString" :id="section.title.charAt(0)">{{ section.title }}</h2>
           <div v-for="entry, index in section.entries" :key="entry.title">
             <ModelEntry :title="entry.title" :model_scaling="entry.model_scaling" :model="entry.path[0]"
               :subheading="entry.subheading" :direction="index % 2 === 0 ? 'right' : 'left'"
