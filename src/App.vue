@@ -4,11 +4,12 @@
   </header>
   <main class="w-full h-full">
     <div class="w-full h-100 pt-15 px-5 flex">
+
       <div class="w-full">
         <h1 class="text-6xl">3D-Showcase</h1>
         <p class="text-2xl">von Leander List</p>
         <div v-for="section, index in sections" :key="section.title">
-          <h2 class="text-4xl mt-10" :ref="numberToString" :id="section.title.charAt(0)">{{ section.title }}</h2>
+          <h2 class="text-4xl mt-10" :id="section.title.charAt(0)">{{ section.title }}</h2>
           <div v-for="entry, index in section.entries" :key="entry.title">
             <ModelEntry :title="entry.title" :model_scaling="entry.model_scaling" :model="entry.path[0]"
               :subheading="entry.subheading" :direction="index % 2 === 0 ? 'right' : 'left'"
@@ -29,7 +30,7 @@
     </div>
   </main>
   <footer>
-   
+
   </footer>
 </template>
 
@@ -46,41 +47,4 @@ import { ref } from 'vue';
 
 const sections: Section[] = entryData;
 
-const one = ref<HTMLElement | null>(null);
-const two = ref<HTMLElement | null>(null);
-const three = ref<HTMLElement | null>(null);
-
-function scrollToHeading(heading: string) {
-  console.log(heading);
-  switch (heading) {
-    case "one":
-      if (one.value)
-        one.value.scrollIntoView({ behavior: "smooth" });
-      break;
-    case "two":
-      if (two.value)
-        two.value.scrollIntoView({ behavior: "smooth" });
-      break;
-    case "three":
-      if (three.value)
-        three.value.scrollIntoView({ behavior: "smooth" });
-      break;
-    default:
-      break;
-  }
-}
-
-
-function numberToString(num: number): string {
-  switch (num) {
-    case 3:
-      return "three";
-    case 4:
-      return "four";
-    case 5:
-      return "five";
-    default:
-      return "zero";
-  }
-}
 </script>
