@@ -1,5 +1,5 @@
 <template>
-    <div class="flex w-full h-20 fixed">
+    <div class="flex w-full h-20 fixed z-50">
         <div class="flex items-center justify-between px-3 my-2 mx-4 w-full h-8 border-2 border-slate-500 bg-base-100 rounded-full"
             style="filter: brightness(1.3);">
             <div class="flex items-center">
